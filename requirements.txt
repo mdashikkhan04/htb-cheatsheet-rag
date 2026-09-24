@@ -1,0 +1,10 @@
+# Core: TF-IDF / hybrid retriever. BM25 + offline synthesis need neither of these.
+numpy>=1.24
+scikit-learn>=1.3
+
+# Optional — uncomment for real LLM synthesis:
+# anthropic>=0.39
+# openai>=1.40
+
+# Optional — uncomment for neural dense retrieval (--backend dense/hybrid-dense):
+# sentence-transformers>=2.2

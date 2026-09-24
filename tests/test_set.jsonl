@@ -1,0 +1,15 @@
+{"id": "Q01", "type": "broad", "technique_key": "windows_privesc", "question": "Provide me the Windows privilege escalation cheatsheet.", "note": "Reference query. Must group techniques (SAM/SYSTEM dump, potato, ADCS, ACL/BloodHound, DCSync, Kerberoast/AS-REP) and cite machines."}
+{"id": "Q02", "type": "broad", "technique_key": "linux_privesc", "question": "Give me a Linux privilege escalation cheatsheet.", "note": "Group sudo/GTFOBins, SUID, cron, capabilities, kernel/PwnKit, docker/lxd."}
+{"id": "Q03", "type": "broad", "technique_key": "ad_attack", "question": "What are the common ways these boxes attack Active Directory?", "note": "Kerberoast, AS-REP, DCSync, ACL abuse, ADCS, shadow credentials."}
+{"id": "Q04", "type": "broad", "technique_key": "sudo_gtfobins", "question": "Show me how sudo misconfigurations and GTFOBins are abused for root.", "note": "Large gold set; measures broad recall."}
+{"id": "Q05", "type": "broad", "technique_key": "adcs", "question": "Give an overview of ADCS certificate abuse (ESC1-ESC8) across the boxes.", "note": "Certipy, vulnerable templates, ESC1/ESC8."}
+{"id": "Q06", "type": "specific", "technique_key": "potato", "question": "How does the PrintSpoofer / potato attack abuse SeImpersonatePrivilege, and which machines use it?", "note": "Potato family tools."}
+{"id": "Q07", "type": "specific", "technique_key": "log4shell", "question": "Which machines are exploited via Log4Shell (CVE-2021-44228) and how?", "note": "Small, clean gold set."}
+{"id": "Q08", "type": "specific", "technique_key": "kerberoast", "question": "How is Kerberoasting performed and which machines use GetUserSPNs?", "note": "SPN roasting."}
+{"id": "Q09", "type": "specific", "technique_key": "dcsync", "question": "Which machines use a DCSync attack to dump domain hashes, and how?", "note": "Replication rights / secretsdump -just-dc."}
+{"id": "Q10", "type": "specific", "technique_key": "pwnkit", "question": "How is the PwnKit (pkexec, CVE-2021-4034) exploit used, and on which machines?", "note": "Very small gold set; high-precision probe."}
+{"id": "Q11", "type": "specific", "technique_key": "shadow_cred", "question": "Which machines use Shadow Credentials (msDS-KeyCredentialLink / Whisker) and how?", "note": "Key trust abuse."}
+{"id": "Q12", "type": "specific", "technique_key": "lxd_docker", "question": "How do machines abuse the docker or lxd group to get root?", "note": "Container group -> host root."}
+{"id": "Q13", "type": "specific", "technique_key": "asrep", "question": "Which machines use AS-REP roasting (GetNPUsers) and how does it work?", "note": "No-preauth roasting."}
+{"id": "Q14", "type": "specific", "technique_key": "acl_bloodhound", "question": "How is BloodHound used to find GenericAll / WriteDACL ACL abuse paths, and on which machines?", "note": "AD ACL abuse."}
+{"id": "Q15", "type": "specific", "technique_key": "sam_dump", "question": "Which machines dump the SAM and SYSTEM registry hives to extract local hashes?", "note": "reg save / samdump2 / secretsdump LOCAL."}

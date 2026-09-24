@@ -1,0 +1,1171 @@
+{
+  "n_questions": 15,
+  "macro_all": {
+    "bm25": {
+      "P@5": 0.813,
+      "P@10": 0.773,
+      "R@10": 0.375,
+      "R@20": 0.518,
+      "MRR": 0.883
+    },
+    "tfidf": {
+      "P@5": 0.867,
+      "P@10": 0.767,
+      "R@10": 0.368,
+      "R@20": 0.495,
+      "MRR": 0.922
+    },
+    "hybrid": {
+      "P@5": 0.867,
+      "P@10": 0.767,
+      "R@10": 0.372,
+      "R@20": 0.508,
+      "MRR": 0.9
+    }
+  },
+  "macro_broad": {
+    "bm25": {
+      "P@5": 0.72,
+      "P@10": 0.74,
+      "R@10": 0.07,
+      "R@20": 0.15,
+      "MRR": 0.75
+    },
+    "tfidf": {
+      "P@5": 0.84,
+      "P@10": 0.82,
+      "R@10": 0.085,
+      "R@20": 0.158,
+      "MRR": 0.867
+    },
+    "hybrid": {
+      "P@5": 0.84,
+      "P@10": 0.76,
+      "R@10": 0.082,
+      "R@20": 0.143,
+      "MRR": 0.8
+    }
+  },
+  "macro_specific": {
+    "bm25": {
+      "P@5": 0.86,
+      "P@10": 0.79,
+      "R@10": 0.528,
+      "R@20": 0.701,
+      "MRR": 0.95
+    },
+    "tfidf": {
+      "P@5": 0.88,
+      "P@10": 0.74,
+      "R@10": 0.51,
+      "R@20": 0.663,
+      "MRR": 0.95
+    },
+    "hybrid": {
+      "P@5": 0.88,
+      "P@10": 0.77,
+      "R@10": 0.518,
+      "R@20": 0.69,
+      "MRR": 0.95
+    }
+  },
+  "per_question": [
+    {
+      "id": "Q01",
+      "type": "broad",
+      "q": "Provide me the Windows privilege escalation cheatsheet.",
+      "gold_n": 89,
+      "backends": {
+        "bm25": {
+          "P@5": 1.0,
+          "P@10": 0.8,
+          "R@10": 0.09,
+          "R@20": 0.18,
+          "MRR": 1.0,
+          "top10": [
+            "tally",
+            "freelancer",
+            "worker",
+            "tombwatcher",
+            "baby",
+            "hackback",
+            "napper",
+            "cicada",
+            "json",
+            "vulnescape"
+          ]
+        },
+        "tfidf": {
+          "P@5": 1.0,
+          "P@10": 0.9,
+          "R@10": 0.101,
+          "R@20": 0.18,
+          "MRR": 1.0,
+          "top10": [
+            "tally",
+            "outdated",
+            "freelancer",
+            "cicada",
+            "absolute",
+            "tombwatcher",
+            "blackfield",
+            "baby",
+            "arkham",
+            "perspective"
+          ]
+        },
+        "hybrid": {
+          "P@5": 1.0,
+          "P@10": 0.7,
+          "R@10": 0.079,
+          "R@20": 0.18,
+          "MRR": 1.0,
+          "top10": [
+            "tally",
+            "freelancer",
+            "tombwatcher",
+            "worker",
+            "cicada",
+            "napper",
+            "arkham",
+            "vulnescape",
+            "outdated",
+            "json"
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q02",
+      "type": "broad",
+      "q": "Give me a Linux privilege escalation cheatsheet.",
+      "gold_n": 298,
+      "backends": {
+        "bm25": {
+          "P@5": 1.0,
+          "P@10": 1.0,
+          "R@10": 0.034,
+          "R@20": 0.067,
+          "MRR": 1.0,
+          "top10": [
+            "clicker",
+            "broker",
+            "routerspace",
+            "paper",
+            "intentions",
+            "earlyaccess",
+            "dab",
+            "pressed",
+            "haircut",
+            "antique"
+          ]
+        },
+        "tfidf": {
+          "P@5": 1.0,
+          "P@10": 1.0,
+          "R@10": 0.034,
+          "R@20": 0.067,
+          "MRR": 1.0,
+          "top10": [
+            "clicker",
+            "routerspace",
+            "pressed",
+            "broker",
+            "paper",
+            "fingerprint",
+            "dab",
+            "antique",
+            "altered",
+            "haircut"
+          ]
+        },
+        "hybrid": {
+          "P@5": 1.0,
+          "P@10": 1.0,
+          "R@10": 0.034,
+          "R@20": 0.067,
+          "MRR": 1.0,
+          "top10": [
+            "clicker",
+            "routerspace",
+            "broker",
+            "paper",
+            "pressed",
+            "dab",
+            "antique",
+            "haircut",
+            "intentions",
+            "altered"
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q03",
+      "type": "broad",
+      "q": "What are the common ways these boxes attack Active Directory?",
+      "gold_n": 69,
+      "backends": {
+        "bm25": {
+          "P@5": 0.4,
+          "P@10": 0.7,
+          "R@10": 0.101,
+          "R@20": 0.232,
+          "MRR": 0.25,
+          "top10": [
+            "timelapse",
+            "bounty",
+            "media",
+            "active",
+            "apt",
+            "rustykey",
+            "escape",
+            "babytwo",
+            "hathor",
+            "rebound"
+          ]
+        },
+        "tfidf": {
+          "P@5": 0.8,
+          "P@10": 0.9,
+          "R@10": 0.13,
+          "R@20": 0.232,
+          "MRR": 1.0,
+          "top10": [
+            "active",
+            "apt",
+            "timelapse",
+            "escape",
+            "pivotapi",
+            "reel",
+            "rebound",
+            "hathor",
+            "shibuya",
+            "lustroustwo"
+          ]
+        },
+        "hybrid": {
+          "P@5": 0.8,
+          "P@10": 0.7,
+          "R@10": 0.101,
+          "R@20": 0.232,
+          "MRR": 0.5,
+          "top10": [
+            "timelapse",
+            "active",
+            "escape",
+            "rebound",
+            "hathor",
+            "bounty",
+            "rustykey",
+            "media",
+            "reel",
+            "babytwo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q04",
+      "type": "broad",
+      "q": "Show me how sudo misconfigurations and GTFOBins are abused for root.",
+      "gold_n": 191,
+      "backends": {
+        "bm25": {
+          "P@5": 1.0,
+          "P@10": 1.0,
+          "R@10": 0.052,
+          "R@20": 0.094,
+          "MRR": 1.0,
+          "top10": [
+            "swagshop",
+            "nunchucks",
+            "strutted",
+            "earlyaccess",
+            "zero",
+            "awkward",
+            "jewel",
+            "conversor",
+            "paper",
+            "traverxec"
+          ]
+        },
+        "tfidf": {
+          "P@5": 1.0,
+          "P@10": 1.0,
+          "R@10": 0.052,
+          "R@20": 0.099,
+          "MRR": 1.0,
+          "top10": [
+            "swagshop",
+            "zero",
+            "strutted",
+            "nunchucks",
+            "earlyaccess",
+            "awkward",
+            "paper",
+            "knife",
+            "traverxec",
+            "jewel"
+          ]
+        },
+        "hybrid": {
+          "P@5": 1.0,
+          "P@10": 1.0,
+          "R@10": 0.052,
+          "R@20": 0.094,
+          "MRR": 1.0,
+          "top10": [
+            "swagshop",
+            "nunchucks",
+            "zero",
+            "strutted",
+            "earlyaccess",
+            "awkward",
+            "paper",
+            "jewel",
+            "traverxec",
+            "knife"
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q05",
+      "type": "broad",
+      "q": "Give an overview of ADCS certificate abuse (ESC1-ESC8) across the boxes.",
+      "gold_n": 28,
+      "backends": {
+        "bm25": {
+          "P@5": 0.2,
+          "P@10": 0.2,
+          "R@10": 0.071,
+          "R@20": 0.179,
+          "MRR": 0.5,
+          "top10": [
+            "tally",
+            "tombwatcher",
+            "freelancer",
+            "baby",
+            "hackback",
+            "cicada",
+            "multimaster",
+            "outdated",
+            "cereal",
+            "absolute"
+          ]
+        },
+        "tfidf": {
+          "P@5": 0.4,
+          "P@10": 0.3,
+          "R@10": 0.107,
+          "R@20": 0.214,
+          "MRR": 0.333,
+          "top10": [
+            "tally",
+            "outdated",
+            "absolute",
+            "tombwatcher",
+            "freelancer",
+            "cicada",
+            "clicker",
+            "baby",
+            "blackfield",
+            "infiltrator"
+          ]
+        },
+        "hybrid": {
+          "P@5": 0.4,
+          "P@10": 0.4,
+          "R@10": 0.143,
+          "R@20": 0.143,
+          "MRR": 0.5,
+          "top10": [
+            "tally",
+            "tombwatcher",
+            "freelancer",
+            "outdated",
+            "absolute",
+            "cicada",
+            "multimaster",
+            "infiltrator",
+            "baby",
+            "fluffy"
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q06",
+      "type": "specific",
+      "q": "How does the PrintSpoofer / potato attack abuse SeImpersonatePrivilege, and which machines use it?",
+      "gold_n": 28,
+      "backends": {
+        "bm25": {
+          "P@5": 1.0,
+          "P@10": 1.0,
+          "R@10": 0.357,
+          "R@20": 0.679,
+          "MRR": 1.0,
+          "top10": [
+            "tally",
+            "pivotapi",
+            "breach",
+            "cereal",
+            "json",
+            "silo",
+            "fighter",
+            "worker",
+            "perspective",
+            "media"
+          ]
+        },
+        "tfidf": {
+          "P@5": 1.0,
+          "P@10": 1.0,
+          "R@10": 0.357,
+          "R@20": 0.536,
+          "MRR": 1.0,
+          "top10": [
+            "breach",
+            "tally",
+            "pivotapi",
+            "fighter",
+            "job",
+            "cereal",
+            "json",
+            "media",
+            "worker",
+            "bounty"
+          ]
+        },
+        "hybrid": {
+          "P@5": 1.0,
+          "P@10": 1.0,
+          "R@10": 0.357,
+          "R@20": 0.571,
+          "MRR": 1.0,
+          "top10": [
+            "tally",
+            "pivotapi",
+            "breach",
+            "fighter",
+            "json",
+            "cereal",
+            "job",
+            "worker",
+            "silo",
+            "media"
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q07",
+      "type": "specific",
+      "q": "Which machines are exploited via Log4Shell (CVE-2021-44228) and how?",
+      "gold_n": 2,
+      "backends": {
+        "bm25": {
+          "P@5": 0.4,
+          "P@10": 0.2,
+          "R@10": 1.0,
+          "R@20": 1.0,
+          "MRR": 1.0,
+          "top10": [
+            "crafty",
+            "logforge",
+            "devvortex",
+            "data",
+            "investigation",
+            "catch",
+            "wifinetictwo",
+            "paper",
+            "soulmate",
+            "darkzero"
+          ]
+        },
+        "tfidf": {
+          "P@5": 0.4,
+          "P@10": 0.2,
+          "R@10": 1.0,
+          "R@20": 1.0,
+          "MRR": 1.0,
+          "top10": [
+            "crafty",
+            "logforge",
+            "catch",
+            "meta",
+            "devvortex",
+            "monitorstwo",
+            "wifinetictwo",
+            "anubis",
+            "admirertoo",
+            "routerspace"
+          ]
+        },
+        "hybrid": {
+          "P@5": 0.4,
+          "P@10": 0.2,
+          "R@10": 1.0,
+          "R@20": 1.0,
+          "MRR": 1.0,
+          "top10": [
+            "crafty",
+            "logforge",
+            "devvortex",
+            "catch",
+            "data",
+            "wifinetictwo",
+            "meta",
+            "monitorstwo",
+            "investigation",
+            "anubis"
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q08",
+      "type": "specific",
+      "q": "How is Kerberoasting performed and which machines use GetUserSPNs?",
+      "gold_n": 28,
+      "backends": {
+        "bm25": {
+          "P@5": 1.0,
+          "P@10": 1.0,
+          "R@10": 0.357,
+          "R@20": 0.5,
+          "MRR": 1.0,
+          "top10": [
+            "rebound",
+            "active",
+            "sizzle",
+            "blackfield",
+            "search",
+            "pivotapi",
+            "tombwatcher",
+            "forest",
+            "object",
+            "administrator"
+          ]
+        },
+        "tfidf": {
+          "P@5": 1.0,
+          "P@10": 0.9,
+          "R@10": 0.321,
+          "R@20": 0.429,
+          "MRR": 1.0,
+          "top10": [
+            "active",
+            "rebound",
+            "search",
+            "blackfield",
+            "sizzle",
+            "pivotapi",
+            "sauna",
+            "tombwatcher",
+            "ethereal",
+            "object"
+          ]
+        },
+        "hybrid": {
+          "P@5": 1.0,
+          "P@10": 1.0,
+          "R@10": 0.357,
+          "R@20": 0.5,
+          "MRR": 1.0,
+          "top10": [
+            "rebound",
+            "active",
+            "sizzle",
+            "search",
+            "blackfield",
+            "pivotapi",
+            "tombwatcher",
+            "object",
+            "forest",
+            "administrator"
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q09",
+      "type": "specific",
+      "q": "Which machines use a DCSync attack to dump domain hashes, and how?",
+      "gold_n": 30,
+      "backends": {
+        "bm25": {
+          "P@5": 1.0,
+          "P@10": 1.0,
+          "R@10": 0.333,
+          "R@20": 0.667,
+          "MRR": 1.0,
+          "top10": [
+            "vintage",
+            "forest",
+            "delegate",
+            "administrator",
+            "blazorized",
+            "phantom",
+            "sizzle",
+            "hathor",
+            "sauna",
+            "rustykey"
+          ]
+        },
+        "tfidf": {
+          "P@5": 1.0,
+          "P@10": 1.0,
+          "R@10": 0.333,
+          "R@20": 0.567,
+          "MRR": 1.0,
+          "top10": [
+            "vintage",
+            "administrator",
+            "delegate",
+            "sauna",
+            "rustykey",
+            "phantom",
+            "forest",
+            "hathor",
+            "scepter",
+            "flight"
+          ]
+        },
+        "hybrid": {
+          "P@5": 1.0,
+          "P@10": 1.0,
+          "R@10": 0.333,
+          "R@20": 0.633,
+          "MRR": 1.0,
+          "top10": [
+            "vintage",
+            "administrator",
+            "delegate",
+            "forest",
+            "phantom",
+            "sauna",
+            "rustykey",
+            "hathor",
+            "sizzle",
+            "scepter"
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q10",
+      "type": "specific",
+      "q": "How is the PwnKit (pkexec, CVE-2021-4034) exploit used, and on which machines?",
+      "gold_n": 4,
+      "backends": {
+        "bm25": {
+          "P@5": 0.8,
+          "P@10": 0.4,
+          "R@10": 1.0,
+          "R@20": 1.0,
+          "MRR": 1.0,
+          "top10": [
+            "antique",
+            "routerspace",
+            "pressed",
+            "paper",
+            "altered",
+            "logforge",
+            "meta",
+            "catch",
+            "investigation",
+            "shibboleth"
+          ]
+        },
+        "tfidf": {
+          "P@5": 0.8,
+          "P@10": 0.4,
+          "R@10": 1.0,
+          "R@20": 1.0,
+          "MRR": 1.0,
+          "top10": [
+            "antique",
+            "pressed",
+            "routerspace",
+            "paper",
+            "catch",
+            "meta",
+            "shibboleth",
+            "monitorstwo",
+            "anubis",
+            "admirertoo"
+          ]
+        },
+        "hybrid": {
+          "P@5": 0.8,
+          "P@10": 0.4,
+          "R@10": 1.0,
+          "R@20": 1.0,
+          "MRR": 1.0,
+          "top10": [
+            "antique",
+            "routerspace",
+            "pressed",
+            "paper",
+            "meta",
+            "shibboleth",
+            "altered",
+            "monitorstwo",
+            "catch",
+            "devvortex"
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q11",
+      "type": "specific",
+      "q": "Which machines use Shadow Credentials (msDS-KeyCredentialLink / Whisker) and how?",
+      "gold_n": 13,
+      "backends": {
+        "bm25": {
+          "P@5": 1.0,
+          "P@10": 1.0,
+          "R@10": 0.769,
+          "R@20": 0.846,
+          "MRR": 1.0,
+          "top10": [
+            "outdated",
+            "absolute",
+            "darkcorp",
+            "mist",
+            "haze",
+            "certified",
+            "tombwatcher",
+            "infiltrator",
+            "fluffy",
+            "escapetwo"
+          ]
+        },
+        "tfidf": {
+          "P@5": 1.0,
+          "P@10": 0.9,
+          "R@10": 0.692,
+          "R@20": 0.846,
+          "MRR": 1.0,
+          "top10": [
+            "outdated",
+            "absolute",
+            "mist",
+            "tombwatcher",
+            "haze",
+            "mirage",
+            "certified",
+            "infiltrator",
+            "fluffy",
+            "darkcorp"
+          ]
+        },
+        "hybrid": {
+          "P@5": 1.0,
+          "P@10": 0.9,
+          "R@10": 0.692,
+          "R@20": 0.846,
+          "MRR": 1.0,
+          "top10": [
+            "outdated",
+            "absolute",
+            "tombwatcher",
+            "mist",
+            "haze",
+            "darkcorp",
+            "infiltrator",
+            "certified",
+            "fluffy",
+            "mirage"
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q12",
+      "type": "specific",
+      "q": "How do machines abuse the docker or lxd group to get root?",
+      "gold_n": 45,
+      "backends": {
+        "bm25": {
+          "P@5": 1.0,
+          "P@10": 0.8,
+          "R@10": 0.178,
+          "R@20": 0.311,
+          "MRR": 1.0,
+          "top10": [
+            "obscurity",
+            "brainfuck",
+            "ariekei",
+            "encoding",
+            "corporate",
+            "earlyaccess",
+            "calamity",
+            "patents",
+            "cybermonday",
+            "tabby"
+          ]
+        },
+        "tfidf": {
+          "P@5": 1.0,
+          "P@10": 0.7,
+          "R@10": 0.156,
+          "R@20": 0.267,
+          "MRR": 1.0,
+          "top10": [
+            "brainfuck",
+            "obscurity",
+            "calamity",
+            "ariekei",
+            "tabby",
+            "corporate",
+            "seventeen",
+            "acute",
+            "zipper",
+            "olympus"
+          ]
+        },
+        "hybrid": {
+          "P@5": 1.0,
+          "P@10": 0.8,
+          "R@10": 0.178,
+          "R@20": 0.311,
+          "MRR": 1.0,
+          "top10": [
+            "brainfuck",
+            "obscurity",
+            "ariekei",
+            "calamity",
+            "corporate",
+            "tabby",
+            "cybermonday",
+            "seventeen",
+            "carrier",
+            "encoding"
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q13",
+      "type": "specific",
+      "q": "Which machines use AS-REP roasting (GetNPUsers) and how does it work?",
+      "gold_n": 18,
+      "backends": {
+        "bm25": {
+          "P@5": 1.0,
+          "P@10": 1.0,
+          "R@10": 0.556,
+          "R@20": 0.778,
+          "MRR": 1.0,
+          "top10": [
+            "blackfield",
+            "forest",
+            "rebound",
+            "mantis",
+            "sauna",
+            "pivotapi",
+            "multimaster",
+            "tentacle",
+            "intelligence",
+            "absolute"
+          ]
+        },
+        "tfidf": {
+          "P@5": 1.0,
+          "P@10": 1.0,
+          "R@10": 0.556,
+          "R@20": 0.778,
+          "MRR": 1.0,
+          "top10": [
+            "sauna",
+            "blackfield",
+            "rebound",
+            "mantis",
+            "forest",
+            "tentacle",
+            "infiltrator",
+            "pivotapi",
+            "multimaster",
+            "intelligence"
+          ]
+        },
+        "hybrid": {
+          "P@5": 1.0,
+          "P@10": 1.0,
+          "R@10": 0.556,
+          "R@20": 0.833,
+          "MRR": 1.0,
+          "top10": [
+            "blackfield",
+            "rebound",
+            "sauna",
+            "forest",
+            "mantis",
+            "tentacle",
+            "pivotapi",
+            "infiltrator",
+            "multimaster",
+            "intelligence"
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q14",
+      "type": "specific",
+      "q": "How is BloodHound used to find GenericAll / WriteDACL ACL abuse paths, and on which machines?",
+      "gold_n": 44,
+      "backends": {
+        "bm25": {
+          "P@5": 1.0,
+          "P@10": 1.0,
+          "R@10": 0.227,
+          "R@20": 0.432,
+          "MRR": 1.0,
+          "top10": [
+            "infiltrator",
+            "object",
+            "babytwo",
+            "tombwatcher",
+            "scepter",
+            "reel",
+            "forest",
+            "university",
+            "sendai",
+            "puppy"
+          ]
+        },
+        "tfidf": {
+          "P@5": 1.0,
+          "P@10": 0.8,
+          "R@10": 0.182,
+          "R@20": 0.409,
+          "MRR": 1.0,
+          "top10": [
+            "tombwatcher",
+            "scepter",
+            "infiltrator",
+            "university",
+            "babytwo",
+            "sauna",
+            "darkcorp",
+            "object",
+            "outdated",
+            "forest"
+          ]
+        },
+        "hybrid": {
+          "P@5": 1.0,
+          "P@10": 0.9,
+          "R@10": 0.205,
+          "R@20": 0.409,
+          "MRR": 1.0,
+          "top10": [
+            "infiltrator",
+            "tombwatcher",
+            "scepter",
+            "object",
+            "babytwo",
+            "university",
+            "forest",
+            "outdated",
+            "delegate",
+            "reel"
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q15",
+      "type": "specific",
+      "q": "Which machines dump the SAM and SYSTEM registry hives to extract local hashes?",
+      "gold_n": 10,
+      "backends": {
+        "bm25": {
+          "P@5": 0.4,
+          "P@10": 0.5,
+          "R@10": 0.5,
+          "R@20": 0.8,
+          "MRR": 0.5,
+          "top10": [
+            "shibuya",
+            "omni",
+            "bastion",
+            "mist",
+            "outdated",
+            "cicada",
+            "silo",
+            "acute",
+            "infiltrator",
+            "freelancer"
+          ]
+        },
+        "tfidf": {
+          "P@5": 0.6,
+          "P@10": 0.5,
+          "R@10": 0.5,
+          "R@20": 0.8,
+          "MRR": 0.5,
+          "top10": [
+            "shibuya",
+            "omni",
+            "cicada",
+            "mist",
+            "bastion",
+            "infiltrator",
+            "outdated",
+            "acute",
+            "darkcorp",
+            "voleur"
+          ]
+        },
+        "hybrid": {
+          "P@5": 0.6,
+          "P@10": 0.5,
+          "R@10": 0.5,
+          "R@20": 0.8,
+          "MRR": 0.5,
+          "top10": [
+            "shibuya",
+            "omni",
+            "bastion",
+            "mist",
+            "cicada",
+            "outdated",
+            "acute",
+            "silo",
+            "infiltrator",
+            "baby"
+          ]
+        }
+      }
+    }
+  ],
+  "synthesis": [
+    {
+      "id": "Q01",
+      "type": "broad",
+      "n_cited": 20,
+      "cite_precision": 0.8,
+      "cite_recall": 0.18,
+      "hallucinated": []
+    },
+    {
+      "id": "Q02",
+      "type": "broad",
+      "n_cited": 24,
+      "cite_precision": 1.0,
+      "cite_recall": 0.081,
+      "hallucinated": []
+    },
+    {
+      "id": "Q03",
+      "type": "broad",
+      "n_cited": 6,
+      "cite_precision": 0.667,
+      "cite_recall": 0.058,
+      "hallucinated": []
+    },
+    {
+      "id": "Q04",
+      "type": "broad",
+      "n_cited": 4,
+      "cite_precision": 1.0,
+      "cite_recall": 0.021,
+      "hallucinated": []
+    },
+    {
+      "id": "Q05",
+      "type": "broad",
+      "n_cited": 25,
+      "cite_precision": 0.32,
+      "cite_recall": 0.286,
+      "hallucinated": []
+    },
+    {
+      "id": "Q06",
+      "type": "specific",
+      "n_cited": 4,
+      "cite_precision": 1.0,
+      "cite_recall": 0.143,
+      "hallucinated": []
+    },
+    {
+      "id": "Q07",
+      "type": "specific",
+      "n_cited": 4,
+      "cite_precision": 0.5,
+      "cite_recall": 1.0,
+      "hallucinated": []
+    },
+    {
+      "id": "Q08",
+      "type": "specific",
+      "n_cited": 5,
+      "cite_precision": 1.0,
+      "cite_recall": 0.179,
+      "hallucinated": []
+    },
+    {
+      "id": "Q09",
+      "type": "specific",
+      "n_cited": 6,
+      "cite_precision": 1.0,
+      "cite_recall": 0.2,
+      "hallucinated": []
+    },
+    {
+      "id": "Q10",
+      "type": "specific",
+      "n_cited": 4,
+      "cite_precision": 1.0,
+      "cite_recall": 1.0,
+      "hallucinated": []
+    },
+    {
+      "id": "Q11",
+      "type": "specific",
+      "n_cited": 5,
+      "cite_precision": 1.0,
+      "cite_recall": 0.385,
+      "hallucinated": []
+    },
+    {
+      "id": "Q12",
+      "type": "specific",
+      "n_cited": 5,
+      "cite_precision": 1.0,
+      "cite_recall": 0.111,
+      "hallucinated": []
+    },
+    {
+      "id": "Q13",
+      "type": "specific",
+      "n_cited": 5,
+      "cite_precision": 1.0,
+      "cite_recall": 0.278,
+      "hallucinated": []
+    },
+    {
+      "id": "Q14",
+      "type": "specific",
+      "n_cited": 5,
+      "cite_precision": 1.0,
+      "cite_recall": 0.114,
+      "hallucinated": []
+    },
+    {
+      "id": "Q15",
+      "type": "specific",
+      "n_cited": 5,
+      "cite_precision": 0.6,
+      "cite_recall": 0.3,
+      "hallucinated": []
+    }
+  ]
+}

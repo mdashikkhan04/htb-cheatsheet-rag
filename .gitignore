@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+data/*.pkl
+../htb-wiki/
+
+*.egg-info/
+build/
+*.egg-link
